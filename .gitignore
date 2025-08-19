@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.sqlite3
+
+# Venv
+venv/
+
+# Env files
+.env*
+!env.example   # 참고용 예시 파일은 허용
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Byte-compiled / cache
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+
+# Test / Type checking
+.mypy_cache/
+pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor swap files
+*.swp
+*.swo
