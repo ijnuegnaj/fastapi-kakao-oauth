@@ -5,7 +5,7 @@ JWT 인증과 DB 저장 기능을 추후 확장할 예정입니다.
 (현재 Redirect URL mismatch → KOE101 오류 발생 중, 추후 수정 필요)
 
 
----
+
 
 
 ## 📌 프로젝트 개요
@@ -16,36 +16,38 @@ JWT 인증과 DB 저장 기능을 추후 확장할 예정입니다.
 - **DB**: 추후 연동 (사용자 정보 저장)
 
 
----
-
-
 ## 📂 프로젝트 구조
 
 app/ # 메인 애플리케이션
+
 ├── auth.py # Kakao OAuth 인증 로직
+
 ├── main.py # FastAPI 엔트리 포인트
+
 └── ...
+
 .env # 환경변수 (직접 생성 필요)
+
 requirements.txt # 의존성 목록
-.gitignore
+
+.gitignore  
 
 
----
 
 
 ## ⚙️ 환경 변수 설정
 
 `.env` 파일을 프로젝트 루트에 생성 후 아래와 같이 작성하세요:
 
-```env
+
 KAKAO_CLIENT_ID=카카오_REST_API_KEY
-KAKAO_REDIRECT_URI=http://localhost:8000/auth/kakao/callback
+KAKAO_REDIRECT_URI=
 SECRET_KEY=jwt_secret_key   # 추후 JWT 발급용
 
 
 ## 🛠️ 설치 및 실행
 1. 가상환경 생성 및 패키지 설치
-> pip install -r requirements.txt
+>pip install -r requirements.txt
 
 2. 서버 실행
-> uvicorn app.main:app --reload
+>uvicorn app.main:app --reload
