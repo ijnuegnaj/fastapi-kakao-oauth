@@ -2,7 +2,7 @@
 
 카카오 OAuth 2.0 로그인을 **FastAPI** 기반으로 구현한 프로젝트입니다.  
 JWT 인증과 DB 저장 기능을 추후 확장할 예정입니다.  
-(현재 Redirect URL mismatch → KOE101 오류 발생 중, 추후 수정 필요)
+(현재 기능 개선중 / 버그 관리 현황은 Issues 참고)
 
 
 
